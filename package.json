@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-amplify/auth": "^6.0.5",
+    "@aws-amplify/ui-react": "^6.0.3",
     "@emotion/cache": "latest",
     "@emotion/react": "latest",
     "@emotion/server": "latest",
@@ -16,12 +18,12 @@
     "@mui/icons-material": "latest",
     "@mui/lab": "^5.0.0-alpha.117",
     "@mui/material": "latest",
-    
     "@tabler/icons-react": "^2.1.1",
     "@types/node": "20.2.3",
     "@types/react": "18.2.18",
     "@types/react-dom": "18.2.4",
     "apexcharts": "3.41.0",
+    "aws-amplify": "^6.0.5",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
     "lodash": "^4.17.21",

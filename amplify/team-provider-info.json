@@ -10,6 +10,11 @@
       "StackName": "amplify-flexyadminnextjsfree-dev-215714",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:598814607022:stack/amplify-flexyadminnextjsfree-dev-215714/fcb457c0-8f7f-11ee-86ad-0ad875a5e32d",
       "AmplifyAppId": "dm8fknwhuoodj"
+    },
+    "categories": {
+      "auth": {
+        "flexyadminnextjsFree": {}
+      }
     }
   }
 }

@@ -13,6 +13,7 @@ import {
   List,
   ListItemText,
 } from "@mui/material";
+import { signOut } from 'aws-amplify/auth';
 
 import { Stack } from "@mui/system";
 import {
@@ -31,6 +32,14 @@ const Profile = () => {
   const handleClose2 = () => {
     setAnchorEl2(null);
   };
+
+  async function handleSignOut() {
+    try {
+      await signOut();
+    } catch (error) {
+      console.log('error signing out: ', error);
+    }
+  }
 
   const theme = useTheme();
   const primary = theme.palette.primary.main;
@@ -136,7 +145,7 @@ const Profile = () => {
             width: "360px",
             p: 2,
             pb: 2,
-            pt:0
+            pt: 0
           },
         }}
       >
@@ -161,7 +170,7 @@ const Profile = () => {
         </Box>
         <Divider />
         <Box mt={2}>
-          <Button fullWidth variant="contained" color="primary">
+          <Button fullWidth variant="contained" color="primary" onClick={handleSignOut}>
             Logout
           </Button>
         </Box>
